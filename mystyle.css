@@ -1,0 +1,130 @@
+ 
+html,body{
+    height: 100%;
+    margin:0;
+    font-family: montserrat,sans-serif;   
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+.split-box{
+    display:flex;
+    height:100%;
+}
+
+.left
+.right{
+    height:100%;
+}
+
+.left{
+    background-color:#00ad7f;
+    width:30%;
+    color:white;
+    padding:3.1rem;
+}
+
+.right{
+    background-color: white;
+    height:100%;
+    width:70%;
+}
+
+.brand{
+    font-weight:bold;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 3px #00ad7f;
+    margin-bottom: 5rem;
+}
+.center{
+    text-align: center;
+}
+.welcome{
+    font-size:2.2rem;
+    font-weight:bold;
+}
+.d-flex{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text{
+    color:#5ae5cc;
+    font-size: 0.9rem;
+    margin-bottom: 5rem;
+    line-height: 1.5; 
+}
+.signin{
+    padding: 15px 52px;
+    border: 1px solid white;
+    border-radius: 27px;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display:inline-block;
+    font-size:1rem;
+}
+.green{
+    color:#00ad7f;
+}
+
+.account-text{
+    color: #ababab;
+}
+
+.icons a{
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+    margin-inline: 1.2rem;
+    content: none;
+    width: auto;
+}
+
+form[name="signup-form"] .controls{
+    width: 350px;
+    margin: auto;
+    display: flex;
+}
+
+form[name="signup-form"] input{
+    display: block;
+    background-color: #e6f8e8;
+    border: none;
+    margin-block: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+form[name="signup-form"] input::placeholder {
+    color: #99a798;
+}
+
+form[name="signup-form"] .controls .bi{
+    font-size: 2rem;
+    position: relative;
+    transform: translateX(calc(100% + .5rem));
+    display: inline-block;
+    color: #99a798;
+}
+
+form[name="signup-form"] .controls:focus .bi{
+    color: black;
+}
+
+.signup-row{
+    width: 200px;
+    margin: 3rem auto 1rem;
+}
+
+.signup-btn{
+    background-color: #00ad7f;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 27px;
+    width: 100%;
+}
