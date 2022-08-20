@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex; 
+    flex-direction: column;   
+}
+.heading{
+    text-align: center;
+    color:blueviolet;
+    font-size:44px;
+
+}
+.boxes{
+    display:flex;
+    
+}
+.box{
+    border:2px solid green;
+    width:24%;
+    padding:64px 74px;
+    margin:31px;
+    font-size:25px;
+    text-transform: capitalize;
+}
+.box{
+    background-color: rgb(214, 77, 77);
+}
+html,body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+@media  screen and (max-width: 790px) {
+    .boxes{
+        display: block;
+    }
+}
+@media screen and (max-width: 995px) {
+    .boxes{
+        background-color: blue;
+        color:white;
+    }    
+}
+@media screen and (max-width: 600px) {
+    .boxes{
+        background-color: aqua;
+        color:brown;
+    }
+}
