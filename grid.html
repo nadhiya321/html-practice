@@ -6,179 +6,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;1,400&family=Montserrat:ital,wght@1,800&display=swap"
         rel="stylesheet">
+    <title>Raaonline</title>
     <style>
         body {
             font-family: sans-serif;
             background-color: white;
+            box-sizing: border-box;
+            --primary-white: #f2fcfe;
         }
 
         .heading-blue {
             color: #007db3;
         }
-
-        .img {
-            width: 5rem;
-            height: 5rem;
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-        }
-
-        nav {
-            margin-top: 30px;
-        }
-
         nav ul {
             display: inline-block;
             list-style: none;
         }
-
         nav ul li {
             float: left;
             border: none;
             text-transform: capitalize;
             color: #00000080;
-            font-weight: 300px;
-
+            font-weight: 400;
         }
-
-        nav ul li nover {
-
+        nav ul li hover {
             background-color: black;
         }
-
+        .mobile-icon{
+            font-size: 30px;
+        }
         a {
             display: block;
             padding-left: 0.5rem;
             padding-right: 0.5rem;
-
             color: inherit;
             text-decoration: none;
         }
-
-        .image-container {
-            display: grid;
-            grid-template-columns: repeat(3, 170px);
-            grid-template-rows: 100px 100px 100px;
-            grid-auto-rows: 100px;
-            grid-row-gap: 50px;
-            grid-column-gap: 50px;
-
-
-        }
-
-        .image-container img {
-            width: 100px;
-            height: 100px;
-
-        }
-
-        .sub-title {
-            font-size: 3rem;
-            color: #002b3e;
-            font-weight: bold;
-        }
-
         .text {
-
             font-size: 1.2rem;
         }
-
-        .images {
-            margin-left: 1rem;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: -15px;
-            margin-bottom: -15px;
-        }
-
         .btn-light {
             color: blue;
-
         }
-
         .text-color {
             font-size: 1rem;
             color: #000000b3;
         }
-        .row{
-            margin-left: 52px;
-            margin-right: 100px;
-        }
-
         .text {
-        
             font-size: 1.2rem;
             color: #18191f;
         }
-        .title{
-            font-size: 3rem;
-            color:#002b3e;
-            font-weight: 700;
+        .split-card {
+            height: 5rem;
+            width: 95%;
+            background-color: var(--primary-white);
+            border-radius: 5px;
+        }
+        .img-col {
+            height: 5rem;
+            width: 5rem;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
         }
     </style>
 </head>
 
 <body>
-       <nav>
-        <ul class="text-color">
-            <li><img src=".\raawebsite\img\log-small.webp" alt="log-small"></li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">packages</a></li>
-            <li><a href="#">seminars</a></li>
-            <li><a href="#">resources</a></li>
-            <li><a href="#">certificate courses</a></li>
-            <li><a href="#">timeline</a></li>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">contact us</a></li>
-            <div class="d-flex justify-content-end style=min-width:.25rem;">
-                <i class="bi bi-search"></i>
-                <button type="button" class="btn btn-light fw-bold">search</button>
-                <i class="bi bi-minecart-loaded"></i>
-                <button type="button" class="btn btn-light fw-bold position-relative">login</button>
-                <button type="button" class="btn btn-primary fw-bold">signup</button>
-            </div>
-        </ul>
-    </nav>
-
     <div class="container-fluid">
+        <nav class="d-flex">
+            <div class="my-2 me-2">
+                <img src=".\raawebsite\img\log-small.webp" alt="log-small">
+            </div>
+            <ul class="d-md-block d-none me-auto mb-0 pt-3 ps-3 text-color">
+                <li><a href="#">home</a></li>
+                <li><a href="#">packages</a></li>
+                <li><a href="#">seminars</a></li>
+                <li><a href="#">resources</a></li>
+                <li><a href="#">certificate courses</a></li>
+                <li><a href="#">timeline</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+            <div class="w-25 ms-5 ps-5">
+                <div class="d-flex justify-content-around style=min-width:.25rem;">
+                    <i class="bi bi-search d-none d-md-block"></i>
+                    <button type="button" class="btn d-none d-md-block btn-light fw-bold">search</button>
+                    <i class="bi bi-minecart-loaded d-none d-md-block"></i>
+                    <button type="button"
+                        class="btn d-none d-md-block btn-light fw-bold position-relative">login</button>
+                    <!-- user icon -->
+                    <i class="mobile-icon bi bi-minecart-loaded d-md-none px-2 pt-2"></i>
+                    <i class="mobile-icon bi bi-people-fill d-md-none px-2 pt-2"></i>
+                    <i class="mobile-icon bi bi-list d-md-none px-2 pt-2"></i>
+                    <button type="button" class="btn btn-primary d-none d-md-block fw-bold">signup</button>
+                </div>
+            </div>
+        </nav>
         <div class="row justify-content-center">
             <div class="col-12 col-sm-5 col-lg-5">
-                <h1 class="sub-title px-3 mt-5">RAAONLINE</h1>
-                <p class="text px-4">Raaonline is an E-learning website on important medical specialities providing
+                <h1 class="fw-bold mt-5">RAAONLINE</h1>
+                <p class="text">Raaonline is an E-learning website on important medical specialities providing
                     critical and timely reinforcement to practicing professionals as well as
                     students who have a periodic need for additional support in academics
                     as well as practical-experience based guidance on day-to-day clinics and cases.</p>
                 <button type="button" class="btn btn-primary text-capitalize fw-bold mx-5">explore products</button>
-
             </div>
-            <div class="col-12 col-sm-5 col-lg-7 pt-4">
-                <img class="image-two" src=".\raawebsite\img\banner.webp" alt="banner">
+            <div class="col-12 col-sm-4 col-lg-6">
+                <img class="w-100" src=".\raawebsite\img\banner.webp" alt="banner">
             </div>
         </div>
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-10">
-                    <h1 class="title">browser categories</h1>
+                    <h1 class="fw-bold">browser categories</h1>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                <div class="col-12 col-sm-10">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mt-3">
                             <div class="split-card">
                                 <div class="d-flex align-items-center">
                                     <div class="">
-                                        <img class="image" src=".\raawebsite\img\img1.jpg" alt="Anesthesia">
-
+                                        <img class="img-col" src=".\raawebsite\img\img1.jpg" alt="Anesthesia">
                                     </div>
                                     <div class="p-3">
-                                        <h2 class="text-blue fs-5">Anesthesia</h2>
+                                        <h2 class="text-blue fs-5 text-primary fw-bold">Anesthesia</h2>
                                     </div>
                                 </div>
                             </div>
@@ -187,11 +144,11 @@
                             <div class="split-card">
                                 <div class="d-flex align-items-center">
                                     <div class="">
-                                        <img class="image" src=".\raawebsite\img\img2.jpg" alt="img2">
+                                        <img class="img-col" src=".\raawebsite\img\img2.jpg" alt="medicine">
 
                                     </div>
                                     <div class="p-3">
-                                        <h2 class="text-blue fs-5">Medicine</h2>
+                                        <h2 class="text-blue fs-5 text-primary fw-bold">Medicine</h2>
                                     </div>
                                 </div>
                             </div>
@@ -200,10 +157,10 @@
                             <div class="split-card">
                                 <div class="d-flex align-items-center">
                                     <div class="">
-                                        <img class="img-col" src="./raawebsite/img/img3.jpg" alt="Anesthesia">
+                                        <img class="img-col" src="./raawebsite/img/img3.jpg" alt="Anatomy">
                                     </div>
                                     <div class="p-3">
-                                        <h2 class="text-blue fs-5">Anatomy</h2>
+                                        <h2 class="text-blue fs-5 text-primary fw-bold">Anatomy</h2>
                                     </div>
                                 </div>
                             </div>
@@ -212,118 +169,184 @@
                             <div class="split-card">
                                 <div class="d-flex align-items-center">
                                     <div class="">
-                                        <img class="img-col" src="./raawebsite/img/img4.jpg" alt="Anesthesia">
+                                        <img class="img-col" src="./raawebsite/img/img4.jpg" alt="Microbiology">
                                     </div>
                                     <div class="p-3">
-                                        <h2 class="text-blue fs-5">Microbiology</h2>
+                                        <h2 class="text-blue fs-5 text-primary fw-bold">Microbiology</h2>
                                     </div>
                                 </div>
                             </div>
                         </div>
-=                        <div class="col-12 col-md-6 col-lg-4 mt-3">
+                        <div class="col-12 col-md-6 col-lg-4 mt-3">
                             <div class="split-card">
                                 <div class="d-flex align-items-center">
                                     <div class="">
-                                        <img class="img-col" src="./raawebsite/img/img5.jpg" alt="Anesthesia">
+                                        <img class="img-col" src="./raawebsite/img/img5.jpg" alt="Orthopaedics">
                                     </div>
                                     <div class="p-3">
-                                        <h2 class="text-blue fs-5">Orthopaedics</h2>
+                                        <h2 class="text-blue fs-5 text-primary fw-bold">Orthopaedics</h2>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                         <div class="col-12 col-md-6 col-lg-4 mt-3">
+                        <div class="col-12 col-md-6 col-lg-4 mt-3">
                             <div class="split-card">
-                                <div class="img">
-                                    <img class="image-col" src=".\raawebsite\img\img6.jpg" alt="Neurological ">
-                                </div>
-                                <div class=" p-3">
-                                    <h2 class="text-bluefs-5">Neurological </h2>
-                                </div>
-                            </div>
-                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="split-card">
-                            <div class="d-flex align-items-center">
-                                <div class="">
-                                  <img class="img-col" src="./raawebsite/img/img5.jpg" alt="Forensic">
-                                </div>
-                                <div class=" p-3">
-                                    <h2 class="text-blue fs-5">Forensic</h2>
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <img class="img-col" src="./raawebsite/img/img6.jpg" alt="Neurological science">
+                                    </div>
+                                    <div class="p-3">
+                                        <h2 class="text-blue fs-5 text-primary fw-bold">Neurological science</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="split-card">
-                            <div class="d-flex align-items-center">
-                                <div class="">
-                                    <img class="img-col" src="./raawebsite/img/img5.jpg" alt="">
-                                </div>
-                                <div class="p-3">             
-                                                           <h2 class="text-blue fs-5"s</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="split-card">
-                            <div class="d-flex align-items-center">
-                                <div class="">
-                                    <img class="img-col" src="./raawebsite/img/img6.jpg" alt="Anesthesia">
-                                </div>
-                                <div class="p-3">
-                                    <h2 class="text-blue fs-5"></h2>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="split-card">
-                            <div class="d-flex align-items-center">
-                                <div class="">
-                                    <img class="img-col" src="./raawebsite/img/img7.jpg" alt="Anesthesia">
-                                </div>
-                                <div class="p-3">
-                                    <h2 class="text-blue fs-5">Orthopaedics</h2>
+                        <div class="col-12 col-md-6 col-lg-4 mt-3">
+                            <div class="split-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <img class="img-col" src="./raawebsite/img/img7.jpg" alt="Forensic">
+                                    </div>
+                                    <div class="p-3">
+                                        <h2 class="text-blue fs-5 text-primary fw-bold">Forensic</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="split-card">
-                            <div class="d-flex align-items-center">
-                                <div class="">
-                                    <img class="img-col" src="./raawebsite/img/img8.jpg" alt="Forensic">
-                                </div>
-                                <div class="p-3">
-                                    <h2 class="text-blue fs-5">Forensic</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="split-card">
-                            <div class="d-flex align-items-center">
-                                <div class="">
-                                    <img class="img-col" src="./raawebsite/img/img9.jpg" alt="Forensic ">
-                                </div>
-                                <div class="p-3">
-                                    <h2 class="text-blue fs-5">Forensic </h2>
+                        <div class="col-12 col-md-6 col-lg-4 mt-3">
+                            <div class="split-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <img class="img-col" src="./raawebsite/img/img8.jpg" alt="animations">
+                                    </div>
+                                    <div class="p-3">
+                                        <h2 class="text-blue fs-5 text-primary fw-bold">Animation</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                  <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="split-card">
-                            <div ciass="img">
-                                    <img class="img-col" src="./raawebsite/img/img10.jpg" alt="animations">
+                        <div class="col-12 col-md-6 col-lg-4 mt-3">
+                            <div class="split-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <img class="img-col" src="./raawebsite/img/img9.jpg"
+                                            alt="critical care medicine">
+                                    </div>
+                                    <div class="p-3">
+                                        <h2 class="text-blue fs-5 text-primary fw-bold">critical care medicine</h2>
+                                    </div>
                                 </div>
-                                <div class="p-3">
-                                    <h2 class="text-blue fs-5">animations</h2>
-                            
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mt-3">
+                            <div class="split-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <img class="img-col" src="./raawebsite/img/img10.jpg" alt="obstetrics">
+                                    </div>
+                                    <div class="p-3">
+                                        <h2 class="text-blue fs-5 text-primary fw-bold">obstetrics</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mt-3">
+                            <div class="split-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <img class="img-col" src="./raawebsite/img/img11.jpg" alt="video and Animation">
+                                    </div>
+                                    <div class="p-3">
+                                        <h2 class="text-blue fs-5 text-primary fw-bold">video and Animation</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mt-3">
+                            <div class="split-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <img class="img-col" src="./raawebsite/img/img12.jpg" alt="pathology">
+                                    </div>
+                                    <div class="p-3">
+                                        <h2 class="text-blue fs-5 text-primary fw-bold">pathology </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mt-3">
+                            <div class="split-card">
+                                <div class="d-flex align-items-center">
+                                    <div ciass="">
+                                        <img class="img-col" src="./raawebsite/img/img13.jpg" alt="obstetrics">
+                                    </div>
+                                    <div class="p-3">
+                                        <h2 class="text-blue fs-5 text-primary fw-bold">obstetrics</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                <div class="split-card">
+                                    <div class="d-flex align-items-center">
+                                        <div ciass="">
+                                            <img class="img-col" src="./raawebsite/img/img14.jpg" alt="physiology">
+                                        </div>
+                                        <div class="p-3">
+                                            <h2 class="text-blue fs-5 text-primary fw-bold">physiology</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                    <div class="split-card">
+                                        <div class="d-flex align-items-center">
+                                            <div ciass="">
+                                                <img class="img-col" src="./raawebsite/img/img15.jpg" alt="otorhinolaryngology">
+                                            </div>
+                                            <div class="p-3">
+                                                <h2 class="text-blue fs-5 text-primary fw-bold">otorhinolaryngology</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                        <div class="split-card">
+                                            <div class="d-flex align-items-center">
+                                                <div ciass="">
+                                                    <img class="img-col" src="./raawebsite/img/img16.jpg"
+                                                        alt="medinfopedia">
+                                                </div>
+                                                <div class="p-3">
+                                                    <h2 class="text-blue fs-5 text-primary fw-bold">medinfopedia</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                        <div class="split-card">
+                                            <div class="d-flex align-items-center">
+                                                <div ciass="">
+                                                    <img class="img-col" src="./raawebsite/img/img17.jpg" alt="Radiology">
+                                                </div>
+                                                <div class="p-3">
+                                                    <h2 class="text-blue fs-5 text-primary fw-bold">Radiology</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                        <div class="split-card">
+                                            <div class="d-flex align-items-center">
+                                                <div ciass="">
+                                                    <img class="img-col" src="./raawebsite/img/img18.jpg" alt="surgery">
+                                                </div>
+                                                <div class="p-3">
+                                                    <h2 class="text-blue fs-5 text-primary fw-bold">surgery</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -332,9 +355,6 @@
             </div>
         </div>
     </div>
-
-
-
 </body>
 
 </html>
