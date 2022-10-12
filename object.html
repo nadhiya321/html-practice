@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="=IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>OBJECT</title>
+</head>
+<script>
+    // /*object*/
+    //     const person= {
+    //         firstName:"giri",
+    //         lastName:"babu",
+    //         age:32,
+
+    //     getName:function () {
+    //        return this.firstName + " "+ this.lastName;
+    //         }
+    // };
+    //            const result=person.getName();
+
+    //  console.log('result:', result);
+
+    const a = {
+        name: "Apple",
+        color: "red",
+
+        abc: function () {
+            return this.name + " " + "is a" + " " + this.color + " " + "color";
+
+        }
+    };
+    const methodResult=a.abc();
+    console.log(methodResult);
+    function abc(a){
+        console.log('function:',a);
+        return a.name+" "+a.color;
+
+    }
+    const result= abc(a);
+    // const result = a.abc(a);
+    console.log('result:', result);
+</script>
+
+</html>

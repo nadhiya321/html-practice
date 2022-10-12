@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="=IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>string method</title>
+</head>
+<script>
+/* 
+indexOf
+lastIndexOf
+charAtcharCodeAt
+at
+slice
+subString
+search
+split
+match
+replace
+replaceAll
+conCat
+toUpperCase
+toLowerCase
+padStart
+padEnd
+trim
+trimStart
+trimEnd
+startsWith
+endWidth
+includes
+repeat
+
+*/
+/*   indexOf */
+let a="please locate where locate occurs!";
+ console.log(a.indexOf('locate'));
+ console.log(a.lastIndexOf('locate'));
+ console.log(a.indexOf('occurs',20)); 
+ console.log(a.lastIndexOf('where',17));   
+ /* search */
+ console.log(a.search('locate'));
+ console.log(a.search('occurs'));
+ /* match */
+ console.log(a.match(/e/i));
+ console.log(a.match(/e/g));
+ console.log(a.match(/e/gi));
+ /* includes */
+ console.log(a.includes('is'));
+ console.log(a.includes('where'));
+ console.log(a.includes('locate',7));
+ console.log(a.includes('locate',28));
+ /* startsWith */
+ console.log(a.startsWith('please'));
+ console.log(a.startsWith('locate'));
+ console.log(a.startsWith('please',0));
+ console.log(a.startsWith('please',6));
+ /* endWith */
+ console.log(a.endsWith('occurs!'));
+ console.log(a.endsWith('occurs!',34));
+ console.log(a.endsWith('occurs!',0));
+console.log(a.endsWith('occurs'));
+/* repeat */
+console.log(a.repeat(2));
+/* charAt */
+console.log(a.charAt('5'));
+console.log(a.charCodeAt('l'));
+console.log(a[0]);
+/* at */
+console.log(a.at(-1));
+console.log(a.at(2));
+/* slice */
+console.log(a.slice(7,14));
+console.log(a.slice(-20,-7));
+console.log(a.slice(7));
+console.log(a.slice(-7));
+/* subString */
+console.log(a.substring(7,20));
+console.log(a.substring(9));
+/* replace */
+console.log(a.replace('locate','hi'));
+console.log(a.replace(/locate/i,'hi'));
+ console.log(a.replaceAll(/locate/g,'hi'));
+console.log(a.replace(/locate/gi,'location'));
+/*  split */
+console.log(a.split(","));
+console.log(a.split(""));
+/* toUppercase */
+console.log(a.toUpperCase());
+console.log(a.toLowerCase());
+/* padStart */
+// let x= "5" ;
+// console.log(x.padStart(2,"x"));
+// console.log(x.padEnd(3,"0"));
+/* trim */
+// let s="     The trim method     remove whitespace from bothsides       ";
+// console.log(s.trim());
+// console.log(s.trimStart());
+// console.log(s.trimEnd());
+let s1="giri";
+let s2="babu";
+console.log(s1.concat(" " ,s2));
+</script>
+</html>
