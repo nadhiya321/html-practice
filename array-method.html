@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width" ,initial-scale="1.0">
+        <title>array method</title>
+    </head>
+    <script>
+/*join
+indexOf
+lastindexOfincludes
+find
+findIndex
+map
+filter
+forEach
+reduce
+reduceRight
+some
+every
+push
+pop
+sort
+shift
+unShift
+splice
+reverse
+fillcopyWithin
+entries
+ ARRAY STATIC METHODS
+ from
+ of
+ isArray
+
+*/
+// join
+const fruits=["coconut","mango","papaya","guava"];
+console.log(fruits.join());
+console.log(fruits.join(" *"));
+console.log(fruits.join("-"),'babu');
+/* indexOf */
+console.log(fruits.indexOf("papaya"));
+console.log(fruits.indexOf("papaya",3));
+console.log(fruits.indexOf("papaya",2));
+// lastIndexOf
+console.log(fruits.lastIndexOf("papaya"));
+console.log(fruits.lastIndexOf("coconut",1));
+// includes
+console.log(fruits.includes("mango",1));
+/* includes */
+console.log(fruits.includes());
+console.log(fruits.includes("apple"));
+console.log(fruits.includes("guava"));
+// map
+ const a=[1,2,3,4,5];
+const final=a.map(function(value){
+    return value * 3;
+});
+ console.log(final);
+
+//  find
+function getName(a){
+    return a > 4;
+}
+console.log(a.find(getName));
+
+// findIndex
+
+a.findIndex(grade);
+function  grade(a){
+    return a > 4;
+}
+console.log(a.findIndex(grade));
+// filter
+a.filter(value);
+function value(a){
+    return a >3;
+}
+console.log(a.filter(value));
+// forEach
+fruits.forEach(name);
+function name(index,array){
+    console.log( index +" " + array);
+}
+// reduce
+const add= (accumulator,currentvalue) =>accumulator + currentvalue.a;
+let total=a.reduce(add,0);
+console.log("your total amount:",total);
+// reduceRight
+const reduce=a.reduce((acc,current,index)=>{
+    return acc+current;
+});
+console.log(reduce);
+const result=a.reduceRight((acc,current,index,array) => {
+    return acc * current;
+});
+console.log(result);
+const some=a.some((acc,current)=>{
+    return acc < current
+});
+console.log(some);
+// every
+const every=a.every((acc,current)=>{
+    return acc < current;
+});
+console.log(every);
+const push=a.push((acc,current)=>{
+     return acc + current;
+ });
+ console.log(push);
+//  pop
+const pop=fruits.pop();
+console.log(pop);
+// push
+const push1=fruits.push();
+console.log(push1);
+// shift
+const shift=fruits.shift();
+console.log(shift);
+// unshift
+// const unShift=fruits.unshift();
+// console.log(unShift);
+const unShift=a.unshift();
+console.log(unShift);
+// splice
+  const numbers=["1","4","5","6","8","9"];
+
+// const reset=fruits.splice(0,1,);
+// console.log(reset);
+// const num=numbers.splice(4, "9","10");
+// console.log(num);
+// reverse
+// const num1=a.reverse();
+// console.log(num1);
+// fill
+// const fill=a.fill(6);
+// console.log(fill);
+// copyWithin
+// const a1=numbers.copyWithin(0,3,2);
+// console.log(a1);
+// entries
+const person = {
+    name : "nadhi",
+    age : 30
+};
+console.log(Object.entries(person));
+    </script>
+</html>
